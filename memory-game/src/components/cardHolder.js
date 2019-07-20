@@ -80,6 +80,9 @@ class CardHolder extends Component {
   render() {
     return (
       <div>
+        <h4>
+          Click all the Stranger Things characters without clicking one twice!
+        </h4>
         <h3>Score: {this.state.points.toString()} | Best Possible: 12</h3>
         {/*add margin bottom */}
         <div className="container">
@@ -89,7 +92,6 @@ class CardHolder extends Component {
               clicked={image.clicked}
               checkIfClicked={this.checkIfClicked}
               key={image.id}
-              // MAY NOT NEED ID
               id={image.id}
             />
           ))}
